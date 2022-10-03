@@ -1,6 +1,6 @@
 package FarmAnimal;
 
-public class FarmAnimal {
+public abstract class FarmAnimal {
     private String name;
     private String gender;
     private double weight;
@@ -48,6 +48,10 @@ public class FarmAnimal {
     public void setAge(int age) {
         this.age = age;
     }
+
+@Override
+    public abstract String feedLoadingSchedule();
+
 
 
 
