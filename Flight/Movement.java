@@ -1,8 +1,8 @@
 package Flight;
 
-public interface Movement {
+public interface Movement extends Flight{
 
-    private String walk;
-    private String jump;  //says 2 abstract methods walk and jump in movement interface?
+    public abstract void walk();
 
+    public abstract void jump();
 }
