@@ -2,28 +2,31 @@ package FarmAnimal;
 
 public class Duck extends FarmAnimal{
 
-    private String quack;
+    private String sound;
 
     //Constructor
 
-    public Duck(String name, String gender, double weight, int age, String quack) {
+    public Duck(String name, String gender, double weight, int age, String sound) {
         super(name, gender, weight, age);
-        this.quack = quack;
+        this.sound = sound;
     }
 
     //Getters and setters
 
-    public String getQuack() {
-        return quack;
+    public String getSound() {
+        return sound;
     }
 
-    public void setQuack(String quack) {
-        this.quack = quack;
+    public void setSound(String sound) {
+        this.sound = sound;
     }
 
     //Methods
 
-
+@Override
+    public String feedLoadingSchedule(String schedule){
+        return "8am-12pm-6pm";
+    }
 
 
 
@@ -32,6 +35,7 @@ public class Duck extends FarmAnimal{
 
     @Override
     public String toString() {
-        return "Duck goes: " + quack + " " + super.toString();
+        return "Duck goes: " + getSound() + " " + super.toString();
     }
 }
+
