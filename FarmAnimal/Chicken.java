@@ -2,28 +2,31 @@ package FarmAnimal;
 
 public class Chicken extends FarmAnimal{
 
-    private String cluck;
+    private String sound;
 
     //Constructor
 
-    public Chicken(String name, String gender, double weight, int age, String cluck) {
+    public Chicken(String name, String gender, double weight, int age, String sound) {
         super(name, gender, weight, age);
-        this.cluck = cluck;
+        this.sound = sound;
     }
 
     //Getters and setters
 
-    public String getCluck() {
-        return cluck;
+    public String getSound() {
+        return sound;
     }
 
-    public void setCluck(String cluck) {
-        this.cluck = cluck;
+    public void setSound(String sound) {
+        this.sound = sound;
     }
 
     //Methods
 
-
+@Override
+    public String feedLoadingSchedule(String schedule){
+        return "8am - 4pm";
+    }
 
 
 
@@ -32,7 +35,7 @@ public class Chicken extends FarmAnimal{
 
     @Override
     public String toString() {
-        return "Chicken goes: " + cluck + " " + super.toString();
+        return "Chicken goes: " + getSound() + " " + super.toString();
     }
 
 }
