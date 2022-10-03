@@ -23,6 +23,8 @@ public class Cow extends FarmAnimal{
 
     //Methods
 
+
+    //same thing. fix this
 @Override
     public String feedLoadingSchedule(String schedule){
         return "6am - 4pm";
