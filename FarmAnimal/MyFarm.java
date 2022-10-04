@@ -12,7 +12,7 @@ public class MyFarm {
         farm[4] = new Chicken("Dixie", "Female", 1.7, 4, "Cluck Cluck");
 
       System.out.println(farm.length);
-      farm.feedLoadingSchedule;
+      farm.feedLoadingSchedule();
 
 
     }
