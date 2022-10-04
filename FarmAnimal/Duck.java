@@ -23,9 +23,8 @@ public class Duck extends FarmAnimal{
 
     //Methods
 
-    //same problem. fix this.
-@Override
-    public String feedLoadingSchedule(String schedule){
+
+    public String feedLoadingSchedule(){
         return "8am-12pm-6pm";
     }
 
