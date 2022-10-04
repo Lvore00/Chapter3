@@ -24,9 +24,7 @@ public class Cow extends FarmAnimal{
     //Methods
 
 
-    //same thing. fix this
-@Override
-    public String feedLoadingSchedule(String schedule){
+    public String feedLoadingSchedule(){
         return "6am - 4pm";
     }
 
@@ -40,4 +38,3 @@ public class Cow extends FarmAnimal{
         return "Cow goes: " + getSound() + " " + super.toString();
     }
 }
-
