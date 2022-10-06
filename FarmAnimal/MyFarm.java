@@ -1,9 +1,11 @@
 package FarmAnimal;
 
+import java.util.Arrays;
+
 public class MyFarm {
     public static void main(String[] args) {
 
-        MyFarm farm[] = new MyFarm[5];
+        FarmAnimal[] farm = new FarmAnimal[5];
 
         farm[0] = new Duck("Donald", "Male", 3.2, 5, "Quack Quack");
         farm[1] = new Duck("Cheese", "Female", 3.6, 5, "Quack Quack");
@@ -12,7 +14,16 @@ public class MyFarm {
         farm[4] = new Chicken("Dixie", "Female", 1.7, 4, "Cluck Cluck");
 
       System.out.println(farm.length);
-      farm.feedLoadingSchedule();
+
+      for(int i = 0; i < farm.length; i++){
+
+          System.out.println(farm[i].feedLoadingSchedule());
+
+          System.out.println(farm[i].toString());
+
+      }
+
+
 
 
     }
