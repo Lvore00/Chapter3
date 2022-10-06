@@ -35,12 +35,12 @@ public class Airplane implements Flight{
         System.out.println("I'm an airplane that relies on an engine to fly.");
     }
 
-    @Override
+
     public void walk(){
         System.out.println("I tax on my wheels.");
     }
 
-    @Override
+
     public void jump(){
         System.out.println("I cannot jump");
     }
