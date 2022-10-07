@@ -1,12 +1,10 @@
 package Flight;
 
-import java.util.Arrays;
-
 public class ThingsThatFly {
 
     public static void main(String[] args) {
 
-        Flight[] thingsThatFly = new Flight[2];
+        Flight[] thingsThatFly = new Flight[3];
 
         thingsThatFly[0] = new Airplane(2016, "Boeing 747");
         thingsThatFly[1] = new Bird("Eagle");
@@ -23,4 +21,3 @@ public class ThingsThatFly {
 
     }
 }
-
