@@ -2,7 +2,7 @@ package Flight;
 
 public interface Movement extends Flight{
 
-    public abstract void walk();
+    void walk();
 
-    public abstract void jump();
+    void jump();
 }
