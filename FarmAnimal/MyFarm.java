@@ -1,6 +1,5 @@
 package FarmAnimal;
 
-import java.util.Arrays;
 
 public class MyFarm {
     public static void main(String[] args) {
@@ -17,14 +16,13 @@ public class MyFarm {
 
       for(int i = 0; i < farm.length; i++){
 
-          System.out.println(farm[i].feedLoadingSchedule());
-
           System.out.println(farm[i].toString());
 
+          System.out.println(farm[i].feedLoadingSchedule());
+
       }
-
-
-
+      
 
     }
 }
+
